@@ -532,7 +532,7 @@ msgstr "Even if you're not in a position to contribute financially, you can stil
 
 #: apps/client/src/pages/home/sections/templates/index.tsx:12
 msgid "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
-msgstr "Explore the templates available in Reactive Resume and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
+msgstr "Explore the templates available in Veri Ed and view the resumes crafted with them. They could also serve as examples to help guide the creation of your next resume."
 
 #: apps/client/src/pages/builder/sidebars/right/index.tsx:111
 #: apps/client/src/pages/builder/sidebars/right/sections/export.tsx:40
@@ -1145,7 +1145,7 @@ msgstr "Raise an issue"
 #: apps/client/src/pages/public/page.tsx:73
 #: apps/client/src/pages/public/page.tsx:94
 msgid "Reactive Resume"
-msgstr "Reactive Resume"
+msgstr "Veri Ed Resume Builder"
 
 #: apps/client/src/pages/home/sections/logo-cloud/index.tsx:39
 msgid "Reactive Resume has helped people land jobs at these great companies:"

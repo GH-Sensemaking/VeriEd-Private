@@ -115,8 +115,12 @@ services:
       - app
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./tools/compose/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /etc/letsencrypt/live/boi-demo.sensemaking.solutions:/etc/letsencrypt/live/boi-demo.sensemaking.solutions:ro
+      - /etc/letsencrypt/archive:/etc/letsencrypt/archive:ro
+      - /etc/letsencrypt/keys:/etc/letsencrypt/keys:ro
 volumes:
   minio_data:
   postgres_data:

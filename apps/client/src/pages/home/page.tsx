@@ -35,10 +35,6 @@ export const HomePage = () => {
       <StatisticsSection />
       <FeaturesSection />
       <TemplatesSection />
-      <TestimonialsSection />
-      <SupportSection />
-      <FAQSection />
-      <ContributorsSection />
     </main>
   );
 };
