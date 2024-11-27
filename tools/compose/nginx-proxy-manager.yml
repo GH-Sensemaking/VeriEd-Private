@@ -32,7 +32,7 @@ services:
       MINIO_ROOT_PASSWORD: minioadmin
     labels:
       - traefik.enable=true
-      - traefik.http.routers.storage.rule=Host(`storage.example.com`)
+      - traefik.http.routers.storage.rule=Host(`storage.sensemaking.solutions`)
       - traefik.http.routers.storage.entrypoints=websecure
       - traefik.http.routers.storage.tls.certresolver=letsencrypt
       - traefik.http.services.storage.loadbalancer.server.port=9000
@@ -49,7 +49,9 @@ services:
       PRE_REQUEST_HEALTH_CHECK: true
 
   app:
-    image: amruthpillai/reactive-resume:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     depends_on:
       - postgres
@@ -61,8 +63,8 @@ services:
       NODE_ENV: production
 
       # -- URLs --
-      PUBLIC_URL: https://example.com
-      STORAGE_URL: https://storage.example.com
+      PUBLIC_URL: https://boi-demo.sensemaking.solutions
+      STORAGE_URL: https://storage.sensemaking.solutions
 
       # -- Printer (Chrome) --
       CHROME_TOKEN: chrome_token
@@ -76,8 +78,8 @@ services:
       REFRESH_TOKEN_SECRET: refresh_token_secret
 
       # -- Emails --
-      MAIL_FROM: noreply@example.com
-      # SMTP_URL: smtp://user:pass@smtp:587 # Optional
+      MAIL_FROM: veri.ed@sensemaking.solutions
+      SMTP_URL: smtp://veri.ed@sensemaking.solutions:Veried123!@smtp.zoho.com:587 # Optional
 
       # -- Storage (Minio) --
       STORAGE_ENDPOINT: minio
