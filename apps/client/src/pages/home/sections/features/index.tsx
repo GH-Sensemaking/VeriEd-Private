@@ -43,9 +43,6 @@ export const FeaturesSection = () => {
   const templatesCount = templatesList.length;
 
   const features: Feature[] = [
-    { icon: <CurrencyDollarSimple />, title: t`Free, forever` },
-    { icon: <GitBranch />, title: t`Open Source` },
-    { icon: <Scales />, title: t`MIT License` },
     { icon: <Prohibit />, title: t`No user tracking or advertising` },
     { icon: <Cloud />, title: t`Self-host with Docker` },
     { icon: <Translate />, title: t`Available in ${languagesCount} languages` },

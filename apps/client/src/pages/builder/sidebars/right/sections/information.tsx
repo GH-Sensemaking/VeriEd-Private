@@ -119,9 +119,6 @@ export const InformationSection = () => {
       </header>
 
       <main className="grid gap-y-4">
-        <DonateCard />
-        <DocumentationCard />
-        <IssuesCard />
       </main>
     </section>
   );

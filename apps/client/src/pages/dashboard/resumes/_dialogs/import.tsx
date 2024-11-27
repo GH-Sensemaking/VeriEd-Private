@@ -229,12 +229,9 @@ export const ImportDialog = () => {
                       <SelectContent>
                         {/* eslint-disable-next-line lingui/no-unlocalized-strings */}
                         <SelectItem value="reactive-resume-json">
-                          Reactive Resume (.json)
+                          VeriEd (.json)
                         </SelectItem>
                         {/* eslint-disable-next-line lingui/no-unlocalized-strings */}
-                        <SelectItem value="reactive-resume-v3-json">
-                          Reactive Resume v3 (.json)
-                        </SelectItem>
                         {/* eslint-disable-next-line lingui/no-unlocalized-strings */}
                         <SelectItem value="json-resume-json">JSON Resume (.json)</SelectItem>
                         {/* eslint-disable-next-line lingui/no-unlocalized-strings */}
