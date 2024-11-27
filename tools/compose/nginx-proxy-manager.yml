@@ -57,6 +57,8 @@ services:
       - postgres
       - minio
       - chrome
+    ports:
+      - "3000:3000"
     environment:
       # -- Environment Variables --
       PORT: 3000
