@@ -66,7 +66,7 @@ services:
 
       # -- URLs --
       PUBLIC_URL: https://boi-demo.sensemaking.solutions
-      STORAGE_URL: https://storage.sensemaking.solutions
+      STORAGE_URL: https://storage.sensemaking.solutions/default
 
       # -- Printer (Chrome) --
       CHROME_TOKEN: chrome_token

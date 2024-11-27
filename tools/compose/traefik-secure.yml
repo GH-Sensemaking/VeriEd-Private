@@ -57,7 +57,9 @@ services:
       - traefik.http.services.printer.loadbalancer.server.port=3000
 
   app:
-    image: amruthpillai/reactive-resume:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     depends_on:
       - postgres
