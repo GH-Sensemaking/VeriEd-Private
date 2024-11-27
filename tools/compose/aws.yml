@@ -63,8 +63,8 @@ services:
       NODE_ENV: production
 
       # -- URLs --
-      PUBLIC_URL: http://localhost:3000
-      STORAGE_URL: http://localhost:9000/default
+      PUBLIC_URL: https://bio-demo.sensemaking.solutions
+      STORAGE_URL: https://storage.sensemaking.solutions/default
 
       # -- Printer (Chrome) --
       CHROME_TOKEN: chrome_token
